@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Person {
 
     private int personId;
+    private String type;
     private String firstName;
     private String lastName;
     private int age;
@@ -17,6 +18,7 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "personId=" + personId +
+                ", type='" + type + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
@@ -25,6 +27,14 @@ public class Person {
                 ", alternateMobile=" + alternateMobile +
                 ", address='" + address + '\'' +
                 '}';
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public int getPersonId() {

@@ -1,5 +1,8 @@
 package com.polymorphismhealthcare;
 
+import com.polymorphismhealthcare.service.BillingService;
+import com.polymorphismhealthcare.service.PersonService;
+
 import java.util.Scanner;
 
 public class PolymorphismHealthcareDemo {
@@ -23,6 +26,9 @@ public class PolymorphismHealthcareDemo {
 
             switch(option){
                 case 1:
+                    PersonService personService = new PersonService();
+                    personService.createPerson();
+                    personService.displayPerson();
                     System.out.println("person created successfully");
                     break;
 
@@ -47,6 +53,11 @@ public class PolymorphismHealthcareDemo {
                     break;
 
                 case 7:
+                    BillingService billingService = new BillingService();
+                    billingService.createBilling();
+                    billingService.displayBilling();
+                    billingService.calculateBill(200);
+                    billingService.calculateBill(200,1500);
                     System.out.println("billing created successfully");
                     break;
 

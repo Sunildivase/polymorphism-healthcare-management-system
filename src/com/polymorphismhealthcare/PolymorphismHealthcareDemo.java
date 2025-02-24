@@ -1,10 +1,7 @@
 package com.polymorphismhealthcare;
 
 import com.polymorphismhealthcare.model.Hospital;
-import com.polymorphismhealthcare.service.BillingService;
-import com.polymorphismhealthcare.service.DoctorService;
-import com.polymorphismhealthcare.service.HospitalService;
-import com.polymorphismhealthcare.service.PersonService;
+import com.polymorphismhealthcare.service.*;
 
 import java.util.Scanner;
 
@@ -53,6 +50,9 @@ public class PolymorphismHealthcareDemo {
                     break;
 
                 case 4:
+                    DepartmentService departmentService = new DepartmentService();
+                    departmentService.createDepartment();
+                    departmentService.displayDepartment();
                     System.out.println("department created successfully");
                     break;
 

@@ -53,6 +53,7 @@ public class PolymorphismHealthcareDemo {
                     DepartmentService departmentService = new DepartmentService();
                     departmentService.createDepartment();
                     departmentService.displayDepartment();
+                    departmentService.displayDepartment("Orthopedic department");
                     System.out.println("department created successfully");
                     break;
 
@@ -61,6 +62,9 @@ public class PolymorphismHealthcareDemo {
                     break;
 
                 case 6:
+                    PrescriptionService prescriptionService = new PrescriptionService();
+                    prescriptionService.createPrescription();
+                    prescriptionService.displayPrescription();
                     System.out.println("prescription created successfully");
                     break;
 

@@ -1,5 +1,6 @@
 package com.polymorphismhealthcare;
 
+import com.polymorphismhealthcare.model.Appointment;
 import com.polymorphismhealthcare.model.Hospital;
 import com.polymorphismhealthcare.service.*;
 
@@ -58,6 +59,10 @@ public class PolymorphismHealthcareDemo {
                     break;
 
                 case 5:
+                    AppointmentService appointmentService = new AppointmentService();
+                    appointmentService.createAppointment();
+                    appointmentService.displayAppointment();
+                    appointmentService.deleteAppointment(1);
                     System.out.println("appointment created successfully");
                     break;
 

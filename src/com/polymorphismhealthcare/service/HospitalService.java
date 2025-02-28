@@ -40,6 +40,7 @@ public class HospitalService {
         hospital.setAddress(address);
         hospital.setContactNo(contactNo);
         hospital.setEmailId(emailId);
+
         hospitals.put(hospitalId, hospital);
         return hospital;
 

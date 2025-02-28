@@ -18,7 +18,7 @@ public class PrescriptionService {
         System.out.println(prescription);
     }
 
-    public void createPrescription(){
+    public Prescription createPrescription(){
 
         System.out.println("please enter prescriptionId");
         int prescriptionId = Integer.parseInt(scanner.nextLine());
@@ -33,6 +33,9 @@ public class PrescriptionService {
         prescription.setPrescriptionId(prescriptionId);
         prescription.setPrescriptionDetails(prescriptionDetails);
         prescription.setPersonId(personId);
+
+        prescriptions.put(prescriptionId,prescription);
+        return prescription;
     }
     public void displayPrescription(){
 

@@ -32,8 +32,8 @@ public class BillingService {
         billing.setBill(bill);
         billing.setTotalBill(totalBill);
         billing.setPersonId(personId);
-        billings.put(String.valueOf(1),billing);
 
+        billings.put(String.valueOf(billId),billing);
         return billing;
     }
 
